@@ -12,6 +12,8 @@ const MAX_COMMENT_LENGTH = 140;
 const MAX_TEGS_COUNT = 5;
 const MAX_SCALE_RANGE = 100;
 const MIN_SCALE_RANGE = 25;
+const NUMBER_OF_PHOTOS = 10;
+const RERENDER_DELAY = 500;
 
 const DESCRIPTION_TEXTS = [
   'Я не хочу быть в отношениях, я лучше буду в мерседесе.',
@@ -78,3 +80,5 @@ export {createPicturePosts};
 export{LOADED_COMMENTS};
 export{MAX_COMMENT_LENGTH, MAX_TEGS_COUNT};
 export{MIN_SCALE_RANGE, MAX_SCALE_RANGE};
+export {NUMBER_OF_PHOTOS};
+export {RERENDER_DELAY};

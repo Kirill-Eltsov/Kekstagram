@@ -5,7 +5,7 @@ const userPictureTemplate = document.querySelector('#picture')
   .content
   .querySelector('.picture');
 
-
+const imgFiltersElement = document.querySelector('.img-filters');
 const createPhotoElements = (photos) => {
   const photosListFragment = document.createDocumentFragment();
 
@@ -19,8 +19,9 @@ const createPhotoElements = (photos) => {
       openPicture(photo);
     });
   });
-
+  userPhotosList.querySelectorAll('.picture').forEach((element) => {element.remove();});
   userPhotosList.appendChild(photosListFragment);
+  imgFiltersElement.classList.remove('img-filters--inactive');
 };
 
 export{createPhotoElements};

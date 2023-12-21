@@ -1,14 +1,13 @@
-import './thumbnails.js';
+import { getData } from './api.js';
+import { setFilters } from './filters.js';
 import './working-with-form.js';
 import './effects.js';
 import './scale.js';
-import { getData } from './api.js';
-import { createPhotoElements } from './thumbnails.js';
 
 
 const loadPictures = async () => {
   try {
-    createPhotoElements(await getData());
+    setFilters(await getData());
   }
   catch (err){
     const alertMessage = document.querySelector('#alert').content;
